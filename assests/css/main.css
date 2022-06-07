@@ -702,6 +702,10 @@
     text-align: left;
 }
 
+.header__cart-item-price
+.header__cart-item-multiply
+.header__cart-item-quantity
+
 .header__cart-item-bottom {
     display: flex;
     justify-content: space-between;
