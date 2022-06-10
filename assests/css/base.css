@@ -9,7 +9,6 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
-
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height))
@@ -26,6 +25,8 @@ html {
     box-sizing: border-box;
 }
 
+
+/* responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -40,7 +41,6 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 /* auth form */
 
@@ -73,7 +73,7 @@ html {
 /* button style */
 
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -83,7 +83,7 @@ html {
     padding: 0 12px;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
