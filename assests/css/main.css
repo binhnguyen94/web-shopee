@@ -46,6 +46,7 @@
     min-height: 26px;
 }
 
+
 /* form sau khi đăng nhập */
 
 .header__navbar-user-img {
@@ -126,7 +127,6 @@
 .header__navbar-user-item a:hover {
     background-color: #fafafa;
 }
-
 
 .header__navbar-item:hover,
 .navbar__icon-link:hover {
@@ -847,3 +847,6 @@
 .header__cart-view:hover {
     background-color: #F05D41;
 }
+
+
+/* main */
