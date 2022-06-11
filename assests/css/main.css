@@ -173,6 +173,7 @@
     display: none;
     animation: fadeIn ease 0.4s;
     cursor: default;
+    z-index: 1;
 }
 
 .header__qr::before {
@@ -849,4 +850,66 @@
 }
 
 
-/* main */
+/* main container */
+
+.app__container {
+    background-color: #f5f5f5;
+}
+
+.app__content {
+    padding-top: 36px;
+}
+
+.catelory {
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+.catelory__heading {
+    padding: 16px 16px 0 16px;
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.catelory__heading-icon {
+    margin-right: 8px;
+}
+
+.catelory-list {
+    padding: 0 0 8px 0;
+    list-style: none;
+}
+
+.catelory-item {
+    position: relative;
+}
+
+.catelory-item:not(:first-child)::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #E1E1E1;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+}
+
+.catelory-item__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: block;
+    padding: 6px 20px;
+}
+
+.catelory-item--active .catelory-item__link {
+    color: var(--primary-color);
+}
+
+.catelory-item__link:hover {
+    color: var(--primary-color);
+}
