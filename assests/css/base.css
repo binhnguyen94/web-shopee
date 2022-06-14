@@ -63,6 +63,7 @@ html {
     width: 83.3333%;
 }
 
+
 /* auth form */
 
 .modal {
@@ -165,18 +166,57 @@ html {
     list-style: none;
     padding: 8px 16px;
     display: none;
+    z-index: 1;
 }
 
 .select-input__link {
+    font-size: 1.4rem;
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1.4rem;
     padding: 4px 0;
     display: block;
 }
 
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination__item {
+    margin: 0 14px;
+}
+
+.pagination__item-link {
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    color: #939393;
+    font-size: 20px;
+    padding: 6px 13px;
+    border-radius: 2px;
+}
+
+.pagination__item-link--active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination__item-link--active:hover {
+    background-color: #ed5c3f;
+}
+
+.pagination__item-link-icon {
+    font-size: 1.6rem;
 }
 
 
