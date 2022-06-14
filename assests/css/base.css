@@ -122,6 +122,61 @@ html {
 }
 
 
+/* selection */
+
+.select-input {
+    width: 200px;
+    height: 34px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.select-input__icon {
+    font-size: 1.2rem;
+    color: #686868;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__list {
+    position: absolute;
+    top: 73%;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    overflow: hidden;
+    list-style: none;
+    padding: 8px 16px;
+    display: none;
+}
+
+.select-input__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 4px 0;
+    display: block;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+
 /* animation */
 
 @keyframes fadeIn {

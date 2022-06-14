@@ -252,25 +252,75 @@
                     <div class="grid__column-10">
                         <div class="home-filter">
                             <span class="home-filter__label">Sắp xếp theo</span>
-                            <button class="btn btn--primary">Phổ biến</button>
-                            <button class="btn">Mới nhất</button>
-                            <button class="btn">Bán chạy</button>
+                            <button class="home-filter__btn btn btn--primary">Phổ biến</button>
+                            <button class="home-filter__btn btn">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
                             <div class="select-input">
                                 <span class="select-input__label">Giá</span>
-                                <i class="fa-solid fa-chevron-down"></i>
+                                <i class="select-input__icon fa-solid fa-chevron-down"></i>
+
+                                <!-- List Option -->
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
                             </div>
 
                             <div class="home-filter__page">
-                                <span class="home-filter__page-nume">
+                                <span class="home-filter__page-num">
                                     <span class="home-filter__page-current">1</span>/14
                                 </span>
                                 <div class="home-filter__page-control">
-                                    <a href="#" class="home-filter__page-btn">
-                                        <i class="fa-solid fa-chevron-left"></i>
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fa-solid fa-chevron-left"></i>
                                     </a>
                                     <a href="#" class="home-filter__page-btn">
-                                        <i class="fa-solid fa-chevron-right"></i>
+                                        <i class="home-filter__page-icon fa-solid fa-chevron-right"></i>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/3ba5e49c5e9f1d3c6330e778bf9e25a3_tn)"></div>
+                                        <h4 class="home-product-item__name">[TH08] Đầm Body Khoét Eo Tay Ngắn - Vải Thun - Màu Trắng, Đen, Cam - Phù Hợp Cho Nàng Đi Chơi - ẢNH THẬT</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">330.000đ</span>
+                                            <span class="home-product-item__price-current">220.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <!-- <i class="fa-solid fa-heart"></i> -->
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">LV</span>
+                                            <span class="home-product-item__origin-name">USA</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">20%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
