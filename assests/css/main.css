@@ -1,3 +1,7 @@
+.main {
+    overflow: hidden;
+}
+
 .header {
     height: var(--header-height);
     background-image: linear-gradient(180deg, #f53f2d, #fe6433);
@@ -461,16 +465,111 @@
     margin: 0 8px;
 }
 
-.header-mobile__search {
-    padding: 0 12px;
+.header-mobile {
     display: none;
+}
+
+/* .header-mobile__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+} */
+
+.header-mobile__menu {
+    margin: 0;
+    padding-left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white-color);
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: transform linear 0.1s;
+}
+
+.header-mobile__menu-close {
+    position: absolute;
+    top: 28px;
+    right: 32px;
+    font-size: 4.2rem;
+    color: var(--white-color);
+    padding: 4px;
+}
+
+.header-mobile__menu-item:first-child {
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+.header-mobile__menu-item:first-child .header-mobile__menu-name {
+    color: var(--white-color);
+}
+
+.header-mobile__menu-item {
+    padding: 32px;
+    list-style: none;
+}
+
+.header-mobile__menu-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-mobile__menu-name {
+    margin-left: 12px;
+    font-size: 2.8rem;
+    line-height: 4rem;
+    font-weight: 400;
+}
+
+.header-mobile__menu-item--separate {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header-mobile__menu-link {
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header-mobile__btn--active:checked ~ .header-mobile__menu {
+    transform: translateX(0%);
+}
+
+.header-mobile__bar-btn {
+    font-size: 3rem;
+    padding: 0 6px;
+    color: var(--white-color);
+}
+
+.header-mobile__bar {
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header-mobile__search {
+    padding: 0 6px;
+    margin: 0 6px;
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header-mobile__search-icon {
     font-size: 2.6rem;
     color: var(--white-color);
 }
-
 .header__logo {
     width: 200px;
 }
@@ -478,8 +577,6 @@
 .header__logo-link {
     text-decoration: none;
     color: transparent;
-    line-height: 0;
-    display: block;
 }
 
 .header__logo-img {
@@ -674,6 +771,7 @@
     padding: 0 12px;
     position: relative;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-wrap:hover .header__cart-list {
@@ -1054,9 +1152,63 @@
     cursor: default;
 }
 
+/* Navigation mobile */
+.mobile-category {
+    display: none;
+}
+
+.mobile-category__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+    background-color: #87afd8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+    background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+    background-color: #88cf81;
+}
+
+.mobile-category__link {
+    --height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: var(--height);
+    height: calc(var(--height) * 2);
+    color: var(--white-color);
+    display: block;
+    width: 110px;
+    border-radius: 4px;
+    padding: 0 6px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 
 /* Product item */
-
 .home-product-item {
     display: block;
     text-decoration: none;
@@ -1244,6 +1396,7 @@ i.home-product-item__like-icon-full {
 
 .home-product__pagination {
     margin: 48px 0 32px 0;
+    padding-left: 0;
 }
 
 
